@@ -7,7 +7,37 @@
     <link rel="stylesheet" href="ck.css">
 </head>
 <body>
-    <div class="ck-container"></div>
+    <div class="ck-container">
+        <!-- Navbar Component -->
+        <nav class="ck-navbar">
+            <a href="#" class="ck-navbar-brand">Brand</a>
+            <button class="ck-navbar-toggle">☰</button>
+            <ul class="ck-navbar-menu">
+                <li class="ck-navbar-item"><a href="#">Home</a></li>
+                <li class="ck-navbar-item"><a href="#">About</a></li>
+                <li class="ck-navbar-item"><a href="#">Services</a></li>
+                <li class="ck-navbar-item ck-navbar-dropdown">
+                    <a class="ck-navbar-dropdown-toggle">More</a>
+                    <div class="ck-navbar-dropdown-menu">
+                        <a href="#" class="ck-navbar-dropdown-item">Submenu 1</a>
+                        <a href="#" class="ck-navbar-dropdown-item">Submenu 2</a>
+                        <a href="#" class="ck-navbar-dropdown-item">Submenu 3</a>
+                    </div>
+                </li>
+                <li class="ck-navbar-item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="ck-spacer-xl"></div>
+        <!-- Dropdown Component -->
+        <div class="ck-dropdown">
+            <button class="ck-dropdown-toggle">Dropdown</button>
+            <div class="ck-dropdown-menu">
+                <a href="#" class="ck-dropdown-item">Action 1</a>
+                <a href="#" class="ck-dropdown-item">Action 2</a>
+                <a href="#" class="ck-dropdown-item">Action 3</a>
+            </div>
+        </div>
+        <div class="ck-spacer-xl"></div>
         <!-- Headings and Text -->
         <div class="ck-row">
             <div class="ck-col-12">
@@ -21,7 +51,7 @@
                 <a href="#">This is a link styled with CK Design System</a>
             </div>
         </div>
-
+        <div class="ck-spacer-xl"></div>
         <!-- Buttons -->
         <div class="ck-row ck-flex ck-flex-wrap ck-gap-2 ck-justify-start">
             <div class="ck-col-12 ck-col-sm-6 ck-col-md-4 ck-margin-medium">
@@ -31,7 +61,12 @@
                 <button class="ck-button ck-bg-green ck-text-black">Secondary Button</button>
             </div>
         </div>
-
+        <div class="ck-spacer-xl"></div>
+        <!-- Tooltip Example -->
+        <div class="ck-button ck-bg-green ck-tooltip">Hover over me
+            <span class="ck-tooltip-text">Tooltip text</span>
+        </div>
+        <div class="ck-spacer-xl"></div>
         <!-- Alerts -->
         <div class="ck-row ck-flex ck-flex-wrap ck-gap-2">
             <div class="ck-col-12 ck-spacing">
@@ -55,8 +90,7 @@
                 </div>
             </div>
         </div>
-
-        
+        <div class="ck-spacer-xl"></div>
         <!-- Form Elements -->
         <div class="ck-row ck-flex ck-flex-wrap ck-justify-center">
             <div class="ck-col-6 ck-spacing">
@@ -74,18 +108,18 @@
                 </form>
             </div>
         </div>
-
+        <div class="ck-spacer-xl"></div>
         <!-- Cards -->
         <div class="ck-row ck-flex ck-flex-wrap ck-gap-2 ck-align-center ck-flex-column">
             <!-- Info Card -->
-            <div class="ck-col-12 ck-col-sm-6 ck-col-md-4 ck-spacing">
+            <div class="ck-col-12 ck-spacing">
                 <div class="ck-card ck-flex ck-flex-column">
                     <h4 class="ck-text-blue">Info Card</h4>
                     <p>This is an informational card providing basic details about a topic.</p>
                 </div>
             </div>
             <!-- Product Card -->
-            <div class="ck-col-12 ck-col-sm-6 ck-col-md-4 ck-spacing">
+            <div class="ck-col-12 ck-spacing">
                 <div class="ck-card ck-flex ck-flex-column">
                     <img src="https://via.placeholder.com/300x200" alt="Product Image" class="ck-img-fluid ck-border ck-shadow">
                     <h4 class="ck-text-blue">Product Name</h4>
@@ -95,7 +129,7 @@
                 </div>
             </div>
             <!-- Blog Article Card -->
-            <div class="ck-col-12 ck-col-sm-6 ck-col-md-4 ck-spacing">
+            <div class="ck-col-12 ck-spacing">
                 <div class="ck-card ck-flex ck-flex-column">
                     <img src="https://via.placeholder.com/300x200" alt="Blog Image" class="ck-img-fluid ck-border ck-shadow">
                     <h4 class="ck-text-blue">Blog Title</h4>
@@ -103,6 +137,62 @@
                   </div>
               </div>
         </div>
+        <div class="ck-spacer-xl"></div>
+        <!-- Callouts -->
+        <div class="ck-row ck-flex ck-flex-wrap ck-gap-2">
+            <div class="ck-col-12 ck-spacing">
+                <div class="ck-callout ck-callout-info">
+                    <p><strong>Info:</strong> This is an informational callout providing additional context or useful information.</p>
+                </div>
+            </div>
+            <div class="ck-col-12 ck-spacing">
+                <div class="ck-callout ck-callout-warning">
+                    <p><strong>Warning:</strong> This is a warning callout indicating a cautionary message or action needed.</p>
+                </div>
+            </div>
+            <div class="ck-col-12 ck-spacing">
+                <div class="ck-callout ck-callout-success">
+                    <p><strong>Success:</strong> This is a success callout indicating that an action was successful.</p>
+                </div>
+            </div>
+            <div class="ck-col-12 ck-spacing">
+                <div class="ck-callout ck-callout-error">
+                    <p><strong>Error:</strong> This is an error callout highlighting an issue that needs attention.</p>
+                </div>
+            </div>
+        </div>
+        <div class="ck-spacer-xl"></div>
+        <!-- Accordion Component -->
+        <div class="ck-accordion">
+            <div class="ck-accordion-item">
+                <div class="ck-accordion-header">Accordion Item 1</div>
+                <div class="ck-accordion-content">
+                    <p>This is the content for Accordion Item 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+                </div>
+            </div>
+            <div class="ck-accordion-item">
+                <div class="ck-accordion-header">Accordion Item 2</div>
+                <div class="ck-accordion-content">
+                    <p>This is the content for Accordion Item 2. Vestibulum tincidunt, libero non ultricies placerat, orci urna vehicula eros, id elementum nisi justo vel magna.</p>
+                </div>
+            </div>
+            <div class="ck-accordion-item">
+                <div class="ck-accordion-header">Accordion Item 3</div>
+                <div class="ck-accordion-content">
+                    <p>This is the content for Accordion Item 3. Curabitur nec odio nec magna ullamcorper pulvinar et sit amet quam.</p>
+                </div>
+            </div>
+        </div>
+        <div class="ck-spacer-xl"></div>
+        <!-- List Group Component -->
+        <ul class="ck-list-group">
+            <li class="ck-list-group-item">List Group Item 1</li>
+            <li class="ck-list-group-item">List Group Item 2</li>
+            <li class="ck-list-group-item">List Group Item 3</li>
+            <li class="ck-list-group-item">List Group Item 4</li>
+        </ul>
     </div>
+
+    <script src="ckcss.js"></script>
 </body>
 </html>
