@@ -555,7 +555,7 @@ h1 {
 
 /* Card Styles */
 .ck-card {
-    border: 1px solid var(--ck-gray);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: var(--ck-border-radius);
     box-shadow: var(--ck-box-shadow);
     padding: var(--ck-padding-mobile);
