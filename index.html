@@ -49,6 +49,7 @@
                 <h6>H6 Heading - Prussian Blue</h6>
                 <p>This is a paragraph showcasing the text style in the CK Design System. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
                 <a href="#">This is a link styled with CK Design System</a>
+                
             </div>
         </div>
         <div class="ck-spacer-xl"></div>
@@ -60,6 +61,49 @@
             <div class="ck-col-12 ck-col-sm-6 ck-col-md-4 ck-margin-medium">
                 <button class="ck-button ck-bg-green ck-text-black">Secondary Button</button>
             </div>
+        </div>
+        <div class="ck-spacer-xl"></div>
+        <!-- Carousel Component -->
+        <div class="ck-row ck-flex ck-flex-wrap ck-justify-center">
+            <div class="ck-carousel">
+                <div class="ck-carousel-inner">
+                    <div class="ck-carousel-item">
+                        <img src="https://picsum.photos/600/300?random=1" alt="Slide 1">
+                    </div>
+                    <div class="ck-carousel-item">
+                        <img src="https://picsum.photos/600/300?random=2" alt="Slide 2">
+                    </div>
+                    <div class="ck-carousel-item">
+                        <img src="https://picsum.photos/600/300?random=3" alt="Slide 3">
+                    </div>
+                </div>
+                <div class="ck-carousel-controls">
+                    <button class="ck-carousel-control ck-carousel-control-prev">&#10094;</button>
+                    <button class="ck-carousel-control ck-carousel-control-next">&#10095;</button>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Trigger Button -->
+        <div class="ck-spacer-xl">
+            
+        <button data-modal-target="#exampleModal" class="ck-button">Open Modal</button>
+
+        <!-- Modal Component -->
+        <div id="exampleModal" class="ck-modal">
+            <div class="ck-modal-content">
+                <div class="ck-modal-header">
+                    <h3>Modal Title</h3>
+                    <button class="ck-modal-close">&times;</button>
+                </div>
+                <div class="ck-modal-body">
+                    <p>This is the content of the modal. You can add text, images, or other elements here.</p>
+                </div>
+                <div class="ck-modal-footer">
+                    <button class="ck-modal-close ck-button">Close</button>
+                    <button class="ck-button">Save changes</button>
+                </div>
+            </div>
+        </div>
         </div>
         <div class="ck-spacer-xl"></div>
         <!-- Tooltip Example -->
@@ -191,7 +235,48 @@
             <li class="ck-list-group-item">List Group Item 3</li>
             <li class="ck-list-group-item">List Group Item 4</li>
         </ul>
-    </div>
+
+        <div class="ck-spacer-xl"></div>
+            <!-- Pricing Table Component -->
+            <div class="ck-pricing-table">
+                <div class="ck-pricing-card">
+                    <h3 class="ck-pricing-title">Basic Plan</h3>
+                    <p class="ck-pricing-price">$9.99/mo</p>
+                    <ul class="ck-pricing-features">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                        <li>Feature 4</li>
+                    </ul>
+                    <button class="ck-button">Get Started</button>
+                </div>
+                <div class="ck-pricing-card">
+                    <h3 class="ck-pricing-title">Standard Plan</h3>
+                    <p class="ck-pricing-price">$19.99/mo</p>
+                    <ul class="ck-pricing-features">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                        <li>Feature 4</li>
+                        <li>Feature 5</li>
+                    </ul>
+                    <button class="ck-button">Get Started</button>
+                </div>
+                <div class="ck-pricing-card">
+                    <h3 class="ck-pricing-title">Premium Plan</h3>
+                    <p class="ck-pricing-price">$29.99/mo</p>
+                    <ul class="ck-pricing-features">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                        <li>Feature 4</li>
+                        <li>Feature 5</li>
+                        <li>Feature 6</li>
+                    </ul>
+                    <button class="ck-button">Get Started</button>
+                </div>
+            </div>
+        </div>
 
     <script src="ckcss.js"></script>
 </body>
