@@ -131,6 +131,29 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .ck-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
 .ck-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
 .ck-card,.ck-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+
+/* Kart Butonu */
+.ck-card-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #003153; /* Prusya Mavisi */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.ck-card-button:hover {
+  background-color: #77dd77; /* Hover durumunda pastel yeşil */
+}
+
+/* Kart Görseli */
+.ck-card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0; /* Kartın üst köşelerine yuvarlaklık */
+  margin-bottom: 16px;
+}
 .ck-card-4,.ck-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
 .ck-spin{animation:w3-spin 2s infinite linear}@keyframes w3-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
 .ck-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
@@ -155,14 +178,113 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .ck-topbar{border-top:6px solid #ccc!important}.ck-bottombar{border-bottom:6px solid #ccc!important}
 .ck-leftbar{border-left:6px solid #ccc!important}.ck-rightbar{border-right:6px solid #ccc!important}
 .ck-section,.ck-code{margin-top:16px!important;margin-bottom:16px!important}
-.ck-margin{margin:16px!important}.ck-margin-top{margin-top:16px!important}.ck-margin-bottom{margin-bottom:16px!important}
-.ck-margin-left{margin-left:16px!important}.ck-margin-right{margin-right:16px!important}
-.ck-padding-small{padding:4px 8px!important}.ck-padding{padding:8px 16px!important}.ck-padding-large{padding:12px 24px!important}
-.ck-padding-16{padding-top:16px!important;padding-bottom:16px!important}.ck-padding-24{padding-top:24px!important;padding-bottom:24px!important}
-.ck-padding-32{padding-top:32px!important;padding-bottom:32px!important}.ck-padding-48{padding-top:48px!important;padding-bottom:48px!important}
-.ck-padding-64{padding-top:64px!important;padding-bottom:64px!important}
-.ck-padding-top-64{padding-top:64px!important}.ck-padding-top-48{padding-top:48px!important}
-.ck-padding-top-32{padding-top:32px!important}.ck-padding-top-24{padding-top:24px!important}
+
+/* Width Stilleri */
+.ck-w-100 { width: 100% !important; }
+.ck-w-90 { width: 90% !important; }
+.ck-w-80 { width: 80% !important; }
+.ck-w-75 { width: 75% !important; }
+.ck-w-70 { width: 70% !important; }
+.ck-w-60 { width: 60% !important; }
+.ck-w-50 { width: 50% !important; }
+.ck-w-40 { width: 40% !important; }
+.ck-w-30 { width: 30% !important; }
+.ck-w-25 { width: 25% !important; }
+.ck-w-20 { width: 20% !important; }
+.ck-w-10 { width: 10% !important; }
+
+/* Height Stilleri */
+.ck-h-100 { height: 100% !important; }
+.ck-h-90 { height: 90% !important; }
+.ck-h-80 { height: 80% !important; }
+.ck-h-75 { height: 75% !important; }
+.ck-h-70 { height: 70% !important; }
+.ck-h-60 { height: 60% !important; }
+.ck-h-50 { height: 50% !important; }
+.ck-h-40 { height: 40% !important; }
+.ck-h-30 { height: 30% !important; }
+.ck-h-25 { height: 25% !important; }
+.ck-h-20 { height: 20% !important; }
+.ck-h-10 { height: 10% !important; }
+
+/* Margin Stilleri */
+.ck-margin { margin: 16px !important; }
+.ck-margin-small { margin: 8px !important; }
+.ck-margin-large { margin: 24px !important; }
+.ck-margin-16 { margin: 16px !important; }
+.ck-margin-24 { margin: 24px !important; }
+.ck-margin-32 { margin: 32px !important; }
+.ck-margin-48 { margin: 48px !important; }
+.ck-margin-64 { margin: 64px !important; }
+.ck-margin-top-16 { margin-top: 16px !important; }
+.ck-margin-top-24 { margin-top: 24px !important; }
+.ck-margin-top-32 { margin-top: 32px !important; }
+.ck-margin-top-48 { margin-top: 48px !important; }
+.ck-margin-top-64 { margin-top: 64px !important; }
+.ck-margin-bottom-16 { margin-bottom: 16px !important; }
+.ck-margin-bottom-24 { margin-bottom: 24px !important; }
+.ck-margin-bottom-32 { margin-bottom: 32px !important; }
+.ck-margin-bottom-48 { margin-bottom: 48px !important; }
+.ck-margin-bottom-64 { margin-bottom: 64px !important; }
+.ck-margin-left-16 { margin-left: 16px !important; }
+.ck-margin-left-24 { margin-left: 24px !important; }
+.ck-margin-left-32 { margin-left: 32px !important; }
+.ck-margin-left-48 { margin-left: 48px !important; }
+.ck-margin-left-64 { margin-left: 64px !important; }
+.ck-margin-right-16 { margin-right: 16px !important; }
+.ck-margin-right-24 { margin-right: 24px !important; }
+.ck-margin-right-32 { margin-right: 32px !important; }
+.ck-margin-right-48 { margin-right: 48px !important; }
+.ck-margin-right-64 { margin-right: 64px !important; }
+.ck-margin-tb-16 { margin-top: 16px !important; margin-bottom: 16px !important; }
+.ck-margin-tb-24 { margin-top: 24px !important; margin-bottom: 24px !important; }
+.ck-margin-tb-32 { margin-top: 32px !important; margin-bottom: 32px !important; }
+.ck-margin-tb-48 { margin-top: 48px !important; margin-bottom: 48px !important; }
+.ck-margin-tb-64 { margin-top: 64px !important; margin-bottom: 64px !important; }
+.ck-margin-rl-16 { margin-right: 16px !important; margin-left: 16px !important; }
+.ck-margin-rl-24 { margin-right: 24px !important; margin-left: 24px !important; }
+.ck-margin-rl-32 { margin-right: 32px !important; margin-left: 32px !important; }
+.ck-margin-rl-48 { margin-right: 48px !important; margin-left: 48px !important; }
+.ck-margin-rl-64 { margin-right: 64px !important; margin-left: 64px !important; }
+/* Padding Stilleri */
+.ck-padding { padding: 16px !important; }
+.ck-padding-small { padding: 8px !important; }
+.ck-padding-large { padding: 24px !important; }
+.ck-padding-16 { padding: 16px !important; }
+.ck-padding-24 { padding: 24px !important; }
+.ck-padding-32 { padding: 32px !important; }
+.ck-padding-48 { padding: 48px !important; }
+.ck-padding-64 { padding: 64px !important; }
+.ck-padding-top-16 { padding-top: 16px !important; }
+.ck-padding-top-24 { padding-top: 24px !important; }
+.ck-padding-top-32 { padding-top: 32px !important; }
+.ck-padding-top-48 { padding-top: 48px !important; }
+.ck-padding-top-64 { padding-top: 64px !important; }
+.ck-padding-bottom-16 { padding-bottom: 16px !important; }
+.ck-padding-bottom-24 { padding-bottom: 24px !important; }
+.ck-padding-bottom-32 { padding-bottom: 32px !important; }
+.ck-padding-bottom-48 { padding-bottom: 48px !important; }
+.ck-padding-bottom-64 { padding-bottom: 64px !important; }
+.ck-padding-left-16 { padding-left: 16px !important; }
+.ck-padding-left-24 { padding-left: 24px !important; }
+.ck-padding-left-32 { padding-left: 32px !important; }
+.ck-padding-left-48 { padding-left: 48px !important; }
+.ck-padding-left-64 { padding-left: 64px !important; }
+.ck-padding-right-16 { padding-right: 16px !important; }
+.ck-padding-right-24 { padding-right: 24px !important; }
+.ck-padding-right-32 { padding-right: 32px !important; }
+.ck-padding-right-48 { padding-right: 48px !important; }
+.ck-padding-right-64 { padding-right: 64px !important; }
+.ck-padding-tb-16 { padding-top: 16px !important; padding-bottom: 16px !important; }
+.ck-padding-tb-24 { padding-top: 24px !important; padding-bottom: 24px !important; }
+.ck-padding-tb-32 { padding-top: 32px !important; padding-bottom: 32px !important; }
+.ck-padding-tb-48 { padding-top: 48px !important; padding-bottom: 48px !important; }
+.ck-padding-tb-64 { padding-top: 64px !important; padding-bottom: 64px !important; }
+.ck-padding-rl-16 { padding-right: 16px !important; padding-left: 16px !important; }
+.ck-padding-rl-24 { padding-right: 24px !important; padding-left: 24px !important; }
+.ck-padding-rl-32 { padding-right: 32px !important; padding-left: 32px !important; }
+.ck-padding-rl-48 { padding-right: 48px !important; padding-left: 48px !important; }
+.ck-padding-rl-64 { padding-right: 64px !important; padding-left: 64px !important; }
 .ck-left{float:left!important}.ck-right{float:right!important}
 .ck-button:hover{color:#000!important;background-color:#ccc!important}
 .ck-transparent,.ck-hover-none:hover{background-color:transparent!important}

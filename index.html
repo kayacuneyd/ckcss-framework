@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ck.css"> <!-- CK.CSS Design System'i ekleyin -->
-    <title>CK.CSS Design System Örneği</title>
-</head>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ck.css">
+<title>CK Card Component Example</title>
 <body>
-    <div class="ck-container ck-d-grid ck-grid-template-columns-3">
-        <div class="header">Header</div>
-        <div class="sidebar">Sidebar</div>
-        <div class="main-content">Main Content</div>
-        <div class="footer">Footer</div>
-      </div>
+
+<div class="ck-container">
+    <div class="ck-row-padding ck-section">
+    <h2>Photo Card</h2>
+
+        <div class="ck-card-4 ck-padding-small" style="width:50%">
+            <img src="https://picsum.photos/400/200" alt="Card Image" class="ck-card-image">
+            <h2 class="ck-card-title">Card Başlık</h2>
+            <p class="ck-card-content">
+                Bu kart bileşeni Exo 2 ve Playfair Display yazı tiplerini kullanarak dikkat çekici ve modern bir tasarım sunar.
+            </p>
+            <a href="#" class="ck-card-button">Daha Fazla Bilgi</a>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
