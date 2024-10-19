@@ -207,6 +207,34 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .ck-h-20 { height: 20% !important; }
 .ck-h-10 { height: 10% !important; }
 
+/* Viewport Width (vw) Stilleri */
+.ck-vw-100 { width: 100vw !important; }
+.ck-vw-90 { width: 90vw !important; }
+.ck-vw-80 { width: 80vw !important; }
+.ck-vw-75 { width: 75vw !important; }
+.ck-vw-70 { width: 70vw !important; }
+.ck-vw-60 { width: 60vw !important; }
+.ck-vw-50 { width: 50vw !important; }
+.ck-vw-40 { width: 40vw !important; }
+.ck-vw-30 { width: 30vw !important; }
+.ck-vw-25 { width: 25vw !important; }
+.ck-vw-20 { width: 20vw !important; }
+.ck-vw-10 { width: 10vw !important; }
+
+/* Viewport Height (vh) Stilleri */
+.ck-vh-100 { height: 100vh !important; }
+.ck-vh-90 { height: 90vh !important; }
+.ck-vh-80 { height: 80vh !important; }
+.ck-vh-75 { height: 75vh !important; }
+.ck-vh-70 { height: 70vh !important; }
+.ck-vh-60 { height: 60vh !important; }
+.ck-vh-50 { height: 50vh !important; }
+.ck-vh-40 { height: 40vh !important; }
+.ck-vh-30 { height: 30vh !important; }
+.ck-vh-25 { height: 25vh !important; }
+.ck-vh-20 { height: 20vh !important; }
+.ck-vh-10 { height: 10vh !important; }
+
 /* Margin Stilleri */
 .ck-margin { margin: 16px !important; }
 .ck-margin-small { margin: 8px !important; }
