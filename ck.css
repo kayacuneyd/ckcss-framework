@@ -91,15 +91,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .ck-container:after,.ck-container:before,.ck-panel:after,.ck-panel:before,.ck-row:after,.ck-row:before,.ck-row-padding:after,.ck-row-padding:before,
 .ck-cell-row:before,.ck-cell-row:after,.ck-clear:after,.ck-clear:before,.ck-bar:before,.ck-bar:after{content:"";display:table;clear:both}
 .ck-col,.ck-half,.ck-third,.ck-twothird,.ck-threequarter,.ck-quarter{float:left;width:100%}
-.ck-col.s1{width:8.33333%}.ck-col.s2{width:16.66666%}.ck-col.s3{width:24.99999%}.ck-col.s4{width:33.33333%}
-.ck-col.s5{width:41.66666%}.ck-col.s6{width:49.99999%}.ck-col.s7{width:58.33333%}.ck-col.s8{width:66.66666%}
-.ck-col.s9{width:74.99999%}.ck-col.s10{width:83.33333%}.ck-col.s11{width:91.66666%}.ck-col.s12{width:99.99999%}
-@media (min-width:601px){.ck-col.m1{width:8.33333%}.ck-col.m2{width:16.66666%}.ck-col.m3,.ck-quarter{width:24.99999%}.ck-col.m4,.ck-third{width:33.33333%}
-.ck-col.m5{width:41.66666%}.ck-col.m6,.ck-half{width:49.99999%}.ck-col.m7{width:58.33333%}.ck-col.m8,.ck-twothird{width:66.66666%}
-.ck-col.m9,.ck-threequarter{width:74.99999%}.ck-col.m10{width:83.33333%}.ck-col.m11{width:91.66666%}.ck-col.m12{width:99.99999%}}
-@media (min-width:993px){.ck-col.l1{width:8.33333%}.ck-col.l2{width:16.66666%}.ck-col.l3{width:24.99999%}.ck-col.l4{width:33.33333%}
-.ck-col.l5{width:41.66666%}.ck-col.l6{width:49.99999%}.ck-col.l7{width:58.33333%}.ck-col.l8{width:66.66666%}
-.ck-col.l9{width:74.99999%}.ck-col.l10{width:83.33333%}.ck-col.l11{width:91.66666%}.ck-col.l12{width:99.99999%}}
+
 .ck-rest{overflow:hidden}.ck-stretch{margin-left:-16px;margin-right:-16px}
 .ck-content,.ck-auto{margin-left:auto;margin-right:auto}.ck-content{max-width:980px}.ck-auto{max-width:1140px}
 .ck-cell-row{display:table;width:100%}.ck-cell{display:table-cell}
@@ -125,14 +117,243 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .ck-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
 .ck-display-container:hover .ck-display-hover{display:block}.ck-display-container:hover span.ck-display-hover{display:inline-block}.ck-display-hover{display:none}
 .ck-display-position{position:absolute}
-.ck-circle{border-radius:50%}
-.ck-round-small{border-radius:2px}.ck-round,.ck-round-medium{border-radius:4px}.ck-round-large{border-radius:8px}.ck-round-xlarge{border-radius:16px}.ck-round-xxlarge{border-radius:32px}
+
+/* Border Radius Stilleri */
+.ck-round-small{border-radius:2px}.ck-round,.ck-round-medium{border-radius:4px}
+.ck-round-large{border-radius:8px}.ck-round-xlarge{border-radius:16px}.ck-round-xxlarge{border-radius:32px}
+.ck-border-radius-5 { border-radius: 5px !important; }.ck-border-radius-10 { border-radius: 10px !important; }
+.ck-border-radius-15 { border-radius: 15px !important; }.ck-border-radius-20 { border-radius: 20px !important; }
+.ck-border-radius-25 { border-radius: 25px !important; }.ck-border-radius-30 { border-radius: 30px !important; }
+.ck-border-radius-35 { border-radius: 35px !important; }.ck-border-radius-40 { border-radius: 40px !important; }
+.ck-border-radius-45 { border-radius: 45px !important; }.ck-circle{border-radius:50%}
+
 .ck-row-padding,.ck-row-padding>.ck-half,.ck-row-padding>.ck-third,.ck-row-padding>.ck-twothird,.ck-row-padding>.ck-threequarter,.ck-row-padding>.ck-quarter,.ck-row-padding>.ck-col{padding:0 8px}
 .ck-container,.ck-panel{padding:0.01em 16px}.ck-panel{margin-top:16px;margin-bottom:16px}
 .ck-code,.ck-codespan{font-family:Consolas,"courier new";font-size:16px}
 .ck-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
 .ck-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
 .ck-card,.ck-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+
+/* CK.CSS Navigation and Header Component Styles with Flexbox */
+
+.ck-header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+}
+
+.ck-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+}
+
+.ck-nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.ck-nav-link:hover {
+  color: #007bff;
+  background-color: #e2e6ea;
+  border-radius: 4px;
+}
+
+/* Utility Classes */
+.ck-d-flex {
+  display: flex !important;
+}
+
+.ck-justify-content-between {
+  justify-content: space-between !important;
+}
+
+.ck-justify-content-center {
+  justify-content: center !important;
+}
+
+.ck-align-items-center {
+  align-items: center !important;
+}
+
+.ck-border-bottom {
+  border-bottom: 1px solid #ced4da !important;
+}
+
+.ck-col-md-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.ck-col-12 {
+  width: 100%;
+}
+
+.ck-col-md-auto {
+  width: auto;
+}
+
+.ck-mb-2 {
+  margin-bottom: 1rem !important;
+}
+
+.ck-mb-md-0 {
+  margin-bottom: 0 !important;
+}
+
+.ck-me-2 {
+  margin-right: 0.5rem !important;
+}
+
+.ck-py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.text-end {
+  text-align: end !important;
+}
+
+/* Buttons are already defined in your previous code */
+
+
+/* CK.CSS Button Component Styles */
+
+.ck-btn {
+  display: inline-block;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  padding: 10px 20px;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  border: none;
+}
+
+.ck-btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Primary Button */
+.ck-btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+.ck-btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Secondary Button */
+.ck-btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+.ck-btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Success Button */
+.ck-btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+.ck-btn-success:hover {
+  background-color: #218838;
+}
+
+/* Danger Button */
+.ck-btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+.ck-btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Warning Button */
+.ck-btn-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+.ck-btn-warning:hover {
+  background-color: #e0a800;
+}
+
+/* Info Button */
+.ck-btn-info {
+  background-color: #17a2b8;
+  color: #fff;
+}
+.ck-btn-info:hover {
+  background-color: #117a8b;
+}
+
+/* Light Button */
+.ck-btn-light {
+  background-color: #f8f9fa;
+  color: #212529;
+  border: 1px solid #ced4da;
+}
+.ck-btn-light:hover {
+  background-color: #e2e6ea;
+}
+
+/* Dark Button */
+.ck-btn-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+.ck-btn-dark:hover {
+  background-color: #23272b;
+}
+
+/* Large Button */
+.ck-btn-lg {
+  padding: 15px 30px;
+  font-size: 1.25em;
+}
+
+/* Small Button */
+.ck-btn-sm {
+  padding: 5px 10px;
+  font-size: 0.875em;
+}
+
+/* Outline Buttons */
+.ck-btn-outline {
+  background-color: transparent;
+  border: 2px solid;
+}
+
+.ck-btn-outline.ck-btn-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.ck-btn-outline.ck-btn-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.ck-btn-outline.ck-btn-success {
+  color: #28a745;
+  border-color: #28a745;
+}
+.ck-btn-outline.ck-btn-success:hover {
+  background-color: #28a745;
+  color: #fff;
+}
 
 /* CK.CSS Card Component */
 .ck-card {
@@ -177,6 +398,56 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 .ck-card-button:hover {
   background-color: #0b7dda;
+}
+
+/* CK.CSS Accordion Component Styles */
+
+.ck-accordion {
+  background-color: #f1f1f1;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+}
+
+.ck-accordion:hover {
+  background-color: #e2e6ea;
+}
+
+.ck-accordion:after {
+  content: '\002B';
+  font-size: 1.5em;
+  float: right;
+  margin-left: 10px;
+}
+
+.ck-accordion-active:after {
+  content: "\2212";
+}
+
+.ck-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: white;
+  padding: 0 18px;
+  opacity: 0;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.ck-accordion-content p {
+  margin: 16px 0;
+}
+
+.ck-accordion-content.show {
+  max-height: 500px;
+  opacity: 1;
 }
 
 .ck-card-4,.ck-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
@@ -405,17 +676,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .ck-padding-rl-48 { padding-right: 48px !important; padding-left: 48px !important; }
 .ck-padding-rl-64 { padding-right: 64px !important; padding-left: 64px !important; }
 
-/* Border Radius Stilleri */
-.ck-border-radius-5 { border-radius: 5px !important; }
-.ck-border-radius-10 { border-radius: 10px !important; }
-.ck-border-radius-15 { border-radius: 15px !important; }
-.ck-border-radius-20 { border-radius: 20px !important; }
-.ck-border-radius-25 { border-radius: 25px !important; }
-.ck-border-radius-30 { border-radius: 30px !important; }
-.ck-border-radius-35 { border-radius: 35px !important; }
-.ck-border-radius-40 { border-radius: 40px !important; }
-.ck-border-radius-45 { border-radius: 45px !important; }
-.ck-border-radius-50 { border-radius: 50px !important; }
 
 /* Display Flex */
 .ck-d-flex { display: flex !important; }
@@ -525,6 +785,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .ck-hover-none:hover{box-shadow:none!important}
 
 /* Colors */
+
 .ck-amber,.ck-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
 .ck-aqua,.ck-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
 .ck-blue,.ck-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
@@ -555,6 +816,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .ck-pale-green,.ck-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
 .ck-pale-yellow,.ck-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
 .ck-pale-blue,.ck-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+
+/* Text Colors */
+
 .ck-text-amber,.ck-hover-text-amber:hover{color:#ffc107!important}
 .ck-text-aqua,.ck-hover-text-aqua:hover{color:#00ffff!important}
 .ck-text-blue,.ck-hover-text-blue:hover{color:#2196F3!important}
@@ -581,6 +845,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .ck-text-grey,.ck-hover-text-grey:hover,.ck-text-gray,.ck-hover-text-gray:hover{color:#757575!important}
 .ck-text-light-grey,.ck-hover-text-light-grey:hover,.ck-text-light-gray,.ck-hover-text-light-gray:hover{color:#f1f1f1!important}
 .ck-text-dark-grey,.ck-hover-text-dark-grey:hover,.ck-text-dark-gray,.ck-hover-text-dark-gray:hover{color:#3a3a3a!important}
+
+/* Border Colors */
+
 .ck-border-amber,.ck-hover-border-amber:hover{border-color:#ffc107!important}
 .ck-border-aqua,.ck-hover-border-aqua:hover{border-color:#00ffff!important}
 .ck-border-blue,.ck-hover-border-blue:hover{border-color:#2196F3!important}
@@ -607,5 +874,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .ck-border-grey,.ck-hover-border-grey:hover,.ck-border-gray,.ck-hover-border-gray:hover{border-color:#9e9e9e!important}
 .ck-border-light-grey,.ck-hover-border-light-grey:hover,.ck-border-light-gray,.ck-hover-border-light-gray:hover{border-color:#f1f1f1!important}
 .ck-border-dark-grey,.ck-hover-border-dark-grey:hover,.ck-border-dark-gray,.ck-hover-border-dark-gray:hover{border-color:#616161!important}
-.ck-border-pale-red,.ck-hover-border-pale-red:hover{border-color:#ffe7e7!important}.ck-border-pale-green,.ck-hover-border-pale-green:hover{border-color:#e7ffe7!important}
-.ck-border-pale-yellow,.ck-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.ck-border-pale-blue,.ck-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+.ck-border-pale-red,.ck-hover-border-pale-red:hover{border-color:#ffe7e7!important}
+.ck-border-pale-green,.ck-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.ck-border-pale-yellow,.ck-hover-border-pale-yellow:hover{border-color:#ffffcc!important}
+.ck-border-pale-blue,.ck-hover-border-pale-blue:hover{border-color:#e7ffff!important}
